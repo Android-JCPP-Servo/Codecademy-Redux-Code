@@ -1,4 +1,11 @@
 /**********************
+ * RULES ABOUT REDUCERS
+ **********************/
+const rule1 = "1. They should only calculate the new state value based on the state and action arguments";
+const rule2 = "2. They are not allowed to modify the existing state. Instead, they must copy the existing state and make changes to the copied values";
+const rule3 = '3. They must not do any asynchronous logic or have other “side effects”';
+
+/**********************
  * REDUCER
  **********************/
 const reducer = (state = initialState, action) => {
